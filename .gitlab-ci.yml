@@ -1,9 +1,16 @@
+stages:
+  - "build beviortree"
+
+
 build behaviortree:
   image: ubuntu
   script:
-    - npm install
-    - npm install -g gatsby-cli
-    - gatsby build
+    - sudo apt-get install libzmq3-dev libboost-coroutine-dev libncurses5-dev libncursesw5-dev
+    - sudo apt install build-essential
+    - mkdir build; cd build
+    - make
+    - 
+ cmake ..
   artifacts:
     paths:
-      - ./public
+      - ./
