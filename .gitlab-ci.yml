@@ -2,8 +2,8 @@ build behaviortree:
   image: ubuntu
   script:
     - apt update
-    - apt-get install libzmq3-dev libboost-coroutine-dev libncurses5-dev libncursesw5-dev
-    - sudo apt install build-essential
+    - apt-get install libzmq3-dev libboost-coroutine-dev libncurses5-dev libncursesw5-dev -y
+    - apt install build-essential
     - mkdir build; cd build
     - cmake
     - make
