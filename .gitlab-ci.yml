@@ -6,6 +6,6 @@ build behaviortree:
     - apt install build-essential -y
     - mkdir build; cd build
     - apt install cmake -y
-    - cmake
+    - cmake ..
     - make
     - sudo make install
