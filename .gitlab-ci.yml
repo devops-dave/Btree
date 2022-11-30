@@ -9,3 +9,8 @@ build behaviortree:
     - cmake ..
     - make
     - make install
+  artifacts:
+    paths:
+      - ./build
+    untracked: false
+    expire_in: 30 days
